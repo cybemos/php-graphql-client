@@ -95,7 +95,7 @@ class Query extends NestableObject
     /**
      * @param string $alias
      *
-     * @return Query
+     * @return static
      */
     public function setAlias(string $alias)
     {
@@ -107,7 +107,7 @@ class Query extends NestableObject
     /**
      * @param string $operationName
      *
-     * @return Query
+     * @return static
      */
     public function setOperationName(string $operationName)
     {
@@ -121,7 +121,7 @@ class Query extends NestableObject
     /**
      * @param array $variables
      *
-     * @return Query
+     * @return static
      */
     public function setVariables(array $variables)
     {
@@ -143,7 +143,7 @@ class Query extends NestableObject
      *
      * @param array $arguments
      *
-     * @return Query
+     * @return static
      * @throws ArgumentException
      */
     public function setArguments(array $arguments): Query
